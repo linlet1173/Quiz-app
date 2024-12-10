@@ -21,12 +21,15 @@ Ensure you have Python installed on your system (version 3.8 or later is recomme
 Running the Application
 
 1. Run the main Python script:
-![Image 11-12-2024 at 7 49 AM (1)](https://github.com/user-attachments/assets/5be57820-1586-43bd-b960-25807cd2be3f)
+         python app.py
 
-2. Follow the menu options to interact with the to-do list.
+3. Follow the menu options to interact with the to-do list.
 
 📂 Project Structure
-![Image 11-12-2024 at 7 54 AM](https://github.com/user-attachments/assets/92140da0-cf1d-4308-ac98-29ab3f8325a0)
+~ app.py       # Main application file
+~ todo.py      # Contains the ToDoManager and Task classes
+~ storage.py   # Handles file read/write operations
+~ README.md    # Project documentation
 
 
 🛠️ Usage
@@ -37,7 +40,8 @@ Updating/Deleting Tasks: Select the task by ID and perform the desired operation
 Saving Tasks: Tasks are automatically saved to a file on exit.
 
 📝 Example Output
-![Image 11-12-2024 at 7 46 AM](https://github.com/user-attachments/assets/0b32b1ac-29aa-4328-87a6-e668b783c586)
+![Image 11-12-2024 at 7 56 AM](https://github.com/user-attachments/assets/f7ecf61d-abea-43db-b19b-c4a10fe61736)
+
 
 📖 License
 
