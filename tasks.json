@@ -1,1 +1,10 @@
-[{"id": "014676c3-1c13-44bf-a876-8e1f350cb309", "description": "Python project", "deadline": "2024-12-11", "priority": "High", "completed": false}, {"id": "6ffe19cd-671f-475a-9658-49dd453fa2f1", "description": "data communication assignmnt", "deadline": "2024-12-15", "priority": "medium", "completed": false}]
+[{"id": "014676c3-1c13-44bf-a876-8e1f350cb309", 
+  "description": "Python project", 
+  "deadline": "2024-12-11", 
+  "priority": "High", 
+  "completed": false}, 
+  
+  {"id": "6ffe19cd-671f-475a-9658-49dd453fa2f1", 
+    "description": "data communication assignmnt", 
+    "deadline": "2024-12-15", "priority": "medium", 
+    "completed": false}]
