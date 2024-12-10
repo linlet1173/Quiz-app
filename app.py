@@ -96,7 +96,7 @@ def main():
 
         elif choice == "5":
             StorageManager.save_to_file(manager.list_tasks())
-            print("Tasks saved. Goodbye!")
+            print("Tasks saved. Goodbye! Have a lovely day!")
             break
 
         else:

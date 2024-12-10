@@ -1,10 +1,1 @@
-[{"id": "014676c3-1c13-44bf-a876-8e1f350cb309", 
-  "description": "Python project", 
-  "deadline": "2024-12-11", 
-  "priority": "High", 
-  "completed": false}, 
-  
-  {"id": "6ffe19cd-671f-475a-9658-49dd453fa2f1", 
-    "description": "data communication assignmnt", 
-    "deadline": "2024-12-15", "priority": "medium", 
-    "completed": false}]
+[{"id": "e6457a72-0fd7-411f-83d9-023a28a27b90", "description": "Python project", "deadline": "2024-12-11", "priority": "High", "completed": false}, {"id": "95b451a7-1e6e-4338-99a0-bc998b9825aa", "description": "data communication assignmnt", "deadline": "2024-12-15", "priority": "medium", "completed": false}, {"id": "79aaaa36-a40a-42b1-a3b8-3991586f10aa", "description": "Eng pronunciation HW", "deadline": "2024-12-16", "priority": "Medium", "completed": false}, {"id": "52644630-ada1-4a36-8d54-da02dbdd9dbb", "description": "Music video making", "deadline": "2024-12-15,Sunday", "priority": "High", "completed": false}, {"id": "d440b8c1-908c-4009-b2df-f9868c8f02ec", "description": "Phy lab assignments>>RC circuit", "deadline": "2024-12-10", "priority": "low", "completed": true}]
