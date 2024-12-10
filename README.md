@@ -1,6 +1,4 @@
-
-
-TO-DO LIST APPLICATION
+TO DO LIST APPLICATION
 
 📜 Description
 
