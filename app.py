@@ -12,11 +12,33 @@ def print_menu():
 
 def check_overdue_tasks(tasks):
     today = datetime.today().date()
-    overdue = [task for task in tasks if task.deadline and datetime.strptime(task.deadline, "%Y-%m-%d").date() < today and not task.completed]
+    overdue = []
+    for task in tasks:
+        if task.deadline:
+            try:
+                deadline_str = task.deadline.split(",")[0]
+                deadline_date = datetime.strptime(deadline_str, "%Y-%m-%d").date()
+                if deadline_date < today and not task.completed:
+                    overdue.append(task)
+            except ValueError as e:
+                print(f"Error parsing deadline '{task.deadline}': {e}")
     if overdue:
         print("\n** Overdue Tasks **")
         for task in overdue:
             print(f"{task.id}: {task.description} (Deadline: {task.deadline})")
+
+def display_tasks(tasks):
+    if not tasks:
+        print("No tasks found.")
+        return
+
+    print("\n--- Task List ---")
+    for i, task in enumerate(tasks, start=1):
+        status = "Done" if task.completed else "Pending"
+        print(f"{i}. {task.id}: {task.description}")
+        print(f"   - Deadline: {task.deadline or 'None'}")
+        print(f"   - Priority: {task.priority}")
+        print(f"   - Status: {status}\n")
 
 def main():
     manager = ToDoManager()
@@ -37,9 +59,7 @@ def main():
             print(f"Task added with ID: {task.id}")
 
         elif choice == "2":
-            if not manager.list_tasks():
-                print("No tasks found.")
-                continue
+            tasks = manager.list_tasks()
 
             print("\n--- View Tasks ---")
             print("1. Sort by Deadline")
@@ -48,28 +68,17 @@ def main():
             print("4. View All Tasks (Unsorted)")
             view_choice = input("Enter your choice: ")
 
-            tasks = manager.list_tasks()
-
             if view_choice == "1":
-                # Sort by deadline (None values at the end)
-                tasks.sort(key=lambda t: t.deadline or "9999-12-31")
+                tasks.sort(key=lambda t: datetime.strptime(t.deadline, "%Y-%m-%d").date() if t.deadline else datetime.max.date())
             elif view_choice == "2":
-                # Sort by priority (High -> Medium -> Low)
                 priority_order = {"High": 1, "Medium": 2, "Low": 3}
                 tasks.sort(key=lambda t: priority_order.get(t.priority, 3))
             elif view_choice == "3":
-                # Sort by completion status (Pending first, Completed last)
                 tasks.sort(key=lambda t: t.completed)
-            elif view_choice == "4":
-                # Unsorted view
-                pass
-            else:
+            elif view_choice != "4":
                 print("Invalid choice. Showing all tasks unsorted.")
 
-            print("\n--- Task List ---")
-            for task in tasks:
-                status = "Done" if task.completed else "Pending"
-                print(f"{task.id}: {task.description} | Deadline: {task.deadline or 'None'} | Priority: {task.priority} | Status: {status}")
+            display_tasks(tasks)
 
         elif choice == "3":
             task_id = input("Enter task ID to update: ")
@@ -95,12 +104,16 @@ def main():
             print("Task deleted successfully.")
 
         elif choice == "5":
-            StorageManager.save_to_file(manager.list_tasks())
-            print("Tasks saved. Goodbye! Have a lovely day!")
+            tasks_to_save = manager.list_tasks()
+            if isinstance(tasks_to_save, list):
+                StorageManager.save_to_file(tasks_to_save)
+                print("Tasks saved. Goodbye! Have a lovely day!")
+            else:
+                print("Error: Failed to retrieve tasks for saving.")
             break
 
         else:
-            print("Invalid choice. Please try again.")
+            print("Invalid choice. Please enter a number between 1 and 5.")
 
 if __name__ == "__main__":
     main()
