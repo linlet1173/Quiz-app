@@ -5,7 +5,7 @@ class StorageManager:
     @staticmethod
     def save_to_file(tasks, filename="tasks.json"):
         with open(filename, "w") as f:
-            json.dump([task.to_dict() for task in tasks], f)
+            json.dump([task.to_dict() for task in tasks], f, indent=4) #Use indent=4 for pretty-print the JSON
 
     @staticmethod
     def load_from_file(filename="tasks.json"):
