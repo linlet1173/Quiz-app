@@ -26,7 +26,8 @@ Running the Application
 2. Follow the menu options to interact with the to-do list.
 
 📂 Project Structure
-![Image 11-12-2024 at 7 49 AM](https://github.com/user-attachments/assets/09a4e5f8-21b2-440b-9e5e-761e622d4807)
+![Image 11-12-2024 at 7 54 AM](https://github.com/user-attachments/assets/92140da0-cf1d-4308-ac98-29ab3f8325a0)
+
 
 🛠️ Usage
 
