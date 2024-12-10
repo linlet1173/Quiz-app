@@ -1,5 +1,3 @@
-https://github.com/linlet1173/To-do-list/blob/main/README.md
-
 TO DO LIST APPLICATION
 
 📜 Description
