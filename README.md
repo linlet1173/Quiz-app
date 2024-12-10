@@ -27,8 +27,11 @@ Ensure you have Python installed on your system (version 3.8 or later is recomme
 
 ## 📂 Project Structure
 ~ app.py       # Main application file
+
 ~ todo.py      # Contains the ToDoManager and Task classes
+
 ~ storage.py   # Handles file read/write operations
+
 ~ README.md    # Project documentation
 
 
