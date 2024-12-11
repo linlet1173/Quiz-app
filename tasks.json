@@ -1,50 +1,50 @@
 [
     {
-        "id": "1701681c-9bc8-416f-87aa-1033bedbd6c1",
+        "id": "f9bd02aa-170a-4fc6-9b5b-bcd8680a2532",
         "description": "Python project",
         "deadline": "2024-12-11",
+        "priority": "High",
+        "completed": true
+    },
+    {
+        "id": "76119270-21eb-48f9-8ef1-2e184aa055b8",
+        "description": "AI exam",
+        "deadline": "2024-12-13",
         "priority": "High",
         "completed": false
     },
     {
-        "id": "d8dd8814-36c2-4eaf-8d3c-e87b0054a56c",
-        "description": "data communication assignmnt",
-        "deadline": "2024-12-15",
-        "priority": "Medium",
-        "completed": false
-    },
-    {
-        "id": "8269fd9d-76b4-4ed3-9b92-2c5e8f9331e2",
-        "description": "Eng pronunciation HW",
-        "deadline": "2024-12-16",
-        "priority": "Medium",
-        "completed": false
-    },
-    {
-        "id": "1a58a7bd-59af-446f-abe8-45503c1d0f1b",
+        "id": "5def2fdf-39d6-4961-9ba5-ba8a696ee042",
         "description": "Music video making",
         "deadline": "2024-12-15",
         "priority": "High",
         "completed": false
     },
     {
-        "id": "8aea5e8c-23bc-4ad1-946e-7f8347c4216a",
-        "description": "Phy lab assignments>>RC circuit",
-        "deadline": "2024-12-10",
-        "priority": "low",
-        "completed": true
-    },
-    {
-        "id": "dcbf01b5-dbe2-4764-821e-8560bdabb344",
-        "description": "Group study in library",
-        "deadline": null,
+        "id": "d89df535-780d-4036-a085-eca47bf2f61d",
+        "description": "data communication assignmnt",
+        "deadline": "2024-12-15",
         "priority": "Medium",
         "completed": false
     },
     {
-        "id": "76a5b42f-ec58-4200-811e-c6d65338fb16",
-        "description": "AI exam",
-        "deadline": "2024-12-13",
+        "id": "a20c48bb-6c27-41e7-9c1c-9039c4bdf0fd",
+        "description": "Eng pronunciation HW",
+        "deadline": "2024-12-16",
+        "priority": "Medium",
+        "completed": false
+    },
+    {
+        "id": "df560c2e-7973-40c8-9cb1-8464d84a1e26",
+        "description": "Group study in library",
+        "deadline": null,
+        "priority": "Medium",
+        "completed": true
+    },
+    {
+        "id": "0f64c342-f582-497d-9bf4-8a4bd525fef8",
+        "description": "Phy lab assignments >> solenoid coil",
+        "deadline": "2024-12-17",
         "priority": "High",
         "completed": false
     }

@@ -17,7 +17,8 @@ def index():
     overdue_tasks = [
         task for task in tasks if task.deadline and datetime.strptime(task.deadline, "%Y-%m-%d").date() < datetime.today().date() and not task.completed
     ]
-    return render_template("index.html", tasks=tasks, overdue_tasks=overdue_tasks)
+    task_count = len(tasks)
+    return render_template("index.html", tasks=tasks, overdue_tasks=overdue_tasks, task_count=task_count)
 
 
 @app.route("/filter", methods=["GET"])

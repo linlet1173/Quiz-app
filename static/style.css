@@ -74,19 +74,19 @@ header h1 {
 }
 
 .priority-medium {
-    color: #f39c12;
+    color: #1228f3;
 }
 
 .priority-low {
-    color: #27ae60;
+    color: #53535a;
 }
 
 .status-pending {
-    color: #e74c3c;
+    color: #e28913;
 }
 
 .status-done {
-    color: #2ecc71;
+    color: #7c0e86;
 }
 
 .delete-btn {
