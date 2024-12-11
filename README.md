@@ -37,7 +37,7 @@ Follow these steps to set up and run the application:
 3. Run the application:
          python app.py
 
-4. Open the app in your browser at http://127.0.0.1:5000/.
+4. Open the app in your browser at http://127.0.0.1:5000/. (** The app will run only after installing the flask)
 
 
 ## 📂 Project Structure
@@ -60,6 +60,9 @@ To-do-list/
 * Tasks are numbered for easy reference.
 * Improved sorting options: View tasks by priority, deadline, or status.
 * Simplified task layout for better readability.
+
+## App
+<img width="1286" alt="to do list app" src="https://github.com/user-attachments/assets/55190418-a364-4d52-a86f-06daa7c3a537">
 
 ## 📖 License
 
