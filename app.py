@@ -9,7 +9,6 @@ app = Flask(__name__)
 manager = ToDoManager()
 manager.tasks = StorageManager.load_from_file()
 
-
 @app.route("/")
 def index():
     # Show all tasks by default
