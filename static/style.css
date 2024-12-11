@@ -10,7 +10,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: #4169E1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-    color: #a7cee0;
+    color: #0c267e;
 }
 
 .add-task {
@@ -59,7 +59,7 @@ header h1 {
 
 .task-list .task-card {
     border: 1px solid #ddd;
-    background: #4169E1;
+    background: rgb(183, 183, 185);
     border-radius: 8px;
     margin-bottom: 10px;
     padding: 15px;
