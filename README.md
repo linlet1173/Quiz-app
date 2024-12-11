@@ -32,13 +32,18 @@ Follow these steps to set up and run the application:
          https://github.com/linlet1173/To-do-list
    
 2. Install required dependencies:
+   
             pip install flask
+   
             pip install -r requirements.txt 
    
-5. Run the application:
-         python app.py
+5. Run the application in codespace:
 
-6. Open the app in your browser at http://127.0.0.1:5000/. (** The app will run only after installing the flask)
+       pip install flask
+   
+       python app.py
+
+7. Open the app in your browser at http://127.0.0.1:5000/. (** The app will run only after installing the flask)
 
 
 ## 📂 Project Structure
