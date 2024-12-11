@@ -1,44 +1,51 @@
 [
     {
-        "id": "350f946b-3bf6-4aa5-a151-02365c4943fc",
+        "id": "1701681c-9bc8-416f-87aa-1033bedbd6c1",
         "description": "Python project",
         "deadline": "2024-12-11",
         "priority": "High",
         "completed": false
     },
     {
-        "id": "7b91a1e3-c9da-4a22-a330-ff23f5fe0b2a",
+        "id": "d8dd8814-36c2-4eaf-8d3c-e87b0054a56c",
         "description": "data communication assignmnt",
         "deadline": "2024-12-15",
         "priority": "Medium",
         "completed": false
     },
     {
-        "id": "6ba38079-9a76-47d9-b2af-8f82909d0962",
+        "id": "8269fd9d-76b4-4ed3-9b92-2c5e8f9331e2",
         "description": "Eng pronunciation HW",
         "deadline": "2024-12-16",
         "priority": "Medium",
         "completed": false
     },
     {
-        "id": "c368d60a-e982-47a6-95ee-e24e8037da0f",
+        "id": "1a58a7bd-59af-446f-abe8-45503c1d0f1b",
         "description": "Music video making",
         "deadline": "2024-12-15",
         "priority": "High",
         "completed": false
     },
     {
-        "id": "1df0fef9-e08d-4854-b391-a0b083776b50",
+        "id": "8aea5e8c-23bc-4ad1-946e-7f8347c4216a",
         "description": "Phy lab assignments>>RC circuit",
         "deadline": "2024-12-10",
         "priority": "low",
         "completed": true
     },
     {
-        "id": "bba6573b-fb11-48d3-a509-86d0d1f89772",
+        "id": "dcbf01b5-dbe2-4764-821e-8560bdabb344",
         "description": "Group study in library",
         "deadline": null,
         "priority": "Medium",
+        "completed": false
+    },
+    {
+        "id": "76a5b42f-ec58-4200-811e-c6d65338fb16",
+        "description": "AI exam",
+        "deadline": "2024-12-13",
+        "priority": "High",
         "completed": false
     }
 ]
