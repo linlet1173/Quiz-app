@@ -26,6 +26,15 @@
             </form>
         </section>
 
+        <section class="task-filters">
+            <h2>Filter Tasks</h2>
+            <div>
+                <a href="/filter?filter_by=priority" class="filter-btn">By Priority</a>
+                <a href="/filter?filter_by=deadline" class="filter-btn">By Deadline</a>
+                <a href="/filter?filter_by=status" class="filter-btn">By Status</a>
+            </div>
+        </section>
+
         <section class="task-list">
             <h2>Tasks</h2>
 
@@ -43,7 +52,6 @@
             {% endif %}
 
             <div class="task-section">
-                <h3>All Tasks</h3>
                 {% for task in tasks %}
                 <div class="task-card">
                     <p><strong>{{ task.description }}</strong></p>

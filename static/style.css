@@ -1,6 +1,6 @@
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
-    background-color:  #4169E1; /* Royal Blue */
+    background-color:  #add8e6; /* Royal Blue */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: #add8e6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -59,7 +59,7 @@ header h1 {
 
 .task-list .task-card {
     border: 1px solid #ddd;
-    background: rgb(183, 183, 185);
+    background: #fff;
     border-radius: 8px;
     margin-bottom: 10px;
     padding: 15px;
@@ -102,4 +102,23 @@ header h1 {
 
 .delete-btn:hover {
     background: #c0392b;
+}
+
+.task-filters {
+    margin-bottom: 20px;
+}
+
+.task-filters .filter-btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.task-filters .filter-btn:hover {
+    background: #45a049;
 }
