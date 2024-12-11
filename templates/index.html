@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>My To-Do List</h1>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
 
-    <h2>Add New Task</h2>
-    <form action="/add" method="POST">
-        <input type="text" name="description" placeholder="Task description" required>
-        <input type="date" name="deadline">
-        <select name="priority">
-            <option value="High">High</option>
-            <option value="Medium" selected>Medium</option>
-            <option value="Low">Low</option>
-        </select>
-        <button type="submit">Add Task</button>
-    </form>
-
-    <h2>Overdue Tasks</h2>
-    <ul>
-        {% for task in overdue_tasks %}
-        <li>
-            {{ task.description }} (Deadline: {{ task.deadline }})
-        </li>
-        {% endfor %}
-    </ul>
-
-    <h2>All Tasks</h2>
-    <ul>
-        {% for task in tasks %}
-        <li>
-            {{ task.description }} - Priority: {{ task.priority }} - Status: {{ "Done" if task.completed else "Pending" }}
-            <form action="/update/{{ task.id }}" method="POST" style="display: inline;">
-                <input type="text" name="description" placeholder="Update description">
+        <section class="add-task">
+            <h2>Add New Task</h2>
+            <form action="/add" method="POST">
+                <input type="text" name="description" placeholder="Task description" required>
                 <input type="date" name="deadline">
                 <select name="priority">
                     <option value="High">High</option>
-                    <option value="Medium">Medium</option>
+                    <option value="Medium" selected>Medium</option>
                     <option value="Low">Low</option>
                 </select>
-                <label>
-                    <input type="checkbox" name="completed" {{ "checked" if task.completed else "" }}>
-                    Completed
-                </label>
-                <button type="submit">Update</button>
+                <button type="submit">Add Task</button>
             </form>
-            <a href="/delete/{{ task.id }}">Delete</a>
-        </li>
-        {% endfor %}
-    </ul>
+        </section>
+
+        <section class="task-list">
+            <h2>Tasks</h2>
+
+            {% if overdue_tasks %}
+            <div class="task-section overdue-tasks">
+                <h3>Overdue Tasks</h3>
+                {% for task in overdue_tasks %}
+                <div class="task-card">
+                    <p><strong>{{ task.description }}</strong></p>
+                    <p>Deadline: {{ task.deadline }}</p>
+                    <p>Status: <span class="status-pending">Overdue</span></p>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="task-section">
+                <h3>All Tasks</h3>
+                {% for task in tasks %}
+                <div class="task-card">
+                    <p><strong>{{ task.description }}</strong></p>
+                    <p>Deadline: {{ task.deadline or "None" }}</p>
+                    <p>Priority: <span class="priority-{{ task.priority|lower }}">{{ task.priority }}</span></p>
+                    <p>Status: <span class="{{ "status-done" if task.completed else "status-pending" }}">{{ "Done" if task.completed else "Pending" }}</span></p>
+                    <form action="/update/{{ task.id }}" method="POST" class="inline-form">
+                        <button type="submit">Mark as Done</button>
+                    </form>
+                    <a href="/delete/{{ task.id }}" class="delete-btn">Delete</a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
 </body>
 </html>
