@@ -1,50 +1,65 @@
-# To Do List Application
+# To Do List Web Application
 
 ## 📜 Description
 
-This is a Python-based To-Do List Application that helps users manage tasks efficiently. Users can add, view, update, delete, and sort tasks based on various attributes such as deadlines, priority, and completion status. Overdue tasks are highlighted to ensure timely action.
+This is a simple, user-friendly To-Do List application built using Flask, enabling users to manage their tasks effectively. The app now features a clean web interface with tasks organized by numbering and displayed by priority, deadline, or status.
 
 ## ✨ Features
 
-Add tasks with descriptions, deadlines, and priorities.
-View tasks with options to sort by deadlines, priority, or status.
-Update or delete tasks easily.
-Automatic notification of overdue tasks.
-Save tasks to a file for persistence.
+1. Add Tasks: Easily add tasks with a description, deadline, and priority.
+2. View Tasks: Tasks are neatly displayed on the web app, with options to:
+            Sort by Priority
+            Sort by Deadline
+            Sort by Status (Pending/Completed)
+
+3. Update Tasks: Modify task details or mark them as completed.
+4. Delete Tasks: Remove tasks you no longer need.
+5. Overdue Notification: Automatically highlights overdue tasks.
+6. Responsive Design: Features a visually appealing sky-blue background with a clean layout.
 
 ## 🚀 Getting Started
 
+## Installation
+Follow these steps to set up and run the application:
+
 ## Prerequisites
+         Python 3.x
+         Flask
 
-Ensure you have Python installed on your system (version 3.8 or later is recommended).
+## Steps
 
-## Running the Application
-
-1. Run the main Python script:
+1. Clone the repository:
+         https://github.com/linlet1173/To-do-list
+   
+2. Install required dependencies:
+         pip install -r requirements.txt
+   
+3. Run the application:
          python app.py
 
-3. Follow the menu options to interact with the to-do list.
+4. Open the app in your browser at http://127.0.0.1:5000/.
+
 
 ## 📂 Project Structure
-~ app.py       # Main application file
 
-~ todo.py      # Contains the ToDoManager and Task classes
+To-do-list/
+│
+├── app.py                 # Main application file
+├── templates/             # HTML templates for the web app
+│   └── index.html         # Main page template
+├── static/                # Static files (CSS, JS, images)
+│   └── style.css          # Styling for the web app
+├── todo.py                # Task management logic
+├── storage.py             # File-based storage management
+├── requirements.txt       # Dependencies
+└── README.md              # Project documentation
 
-~ storage.py   # Handles file read/write operations
-
-~ README.md    # Project documentation
-
-
-## 🛠️ Usage
-
-Adding a Task: Enter task details, including description, deadline, and priority.
-Viewing Tasks: Choose from various sorting options to view tasks in the desired order.
-Updating/Deleting Tasks: Select the task by ID and perform the desired operation.
-Saving Tasks: Tasks are automatically saved to a file on exit.
-
-## 📝 Example Output
-![Image 11-12-2024 at 7 56 AM](https://github.com/user-attachments/assets/f7ecf61d-abea-43db-b19b-c4a10fe61736)
-
+## App Version
+* Transitioned to a web-based interface using Flask.
+* Added a sky-blue background for a visually pleasing design.
+* Tasks are numbered for easy reference.
+* Improved sorting options: View tasks by priority, deadline, or status.
+* Simplified task layout for better readability.
 
 ## 📖 License
 
